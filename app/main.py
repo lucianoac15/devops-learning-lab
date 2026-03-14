@@ -6,3 +6,8 @@ app = FastAPI()
 @app.get("/")
 def root():
     return {"message": "Text Analysis API"}
+
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
